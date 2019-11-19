@@ -15,7 +15,18 @@
   </tr>
 </table>
 
+## About the Portfolios
 
+I currently have three of them to hand in, each of them has its own project website.
 
+- [Portfoilo No.1:An iOS App using Swift, Objective-C and C++](https://www.dropbox.com/s/hfv8mkxu996wwe9/Portfolio.1.CUI_ZHENYU.zip?dl=0)
 
+	![avatar](./img/imgpt001.jpg)
 
+- [Portfoilo No.2: A Simple Game using C++, Kinect SDK and Direct2D](https://github.com/TomJinW/PortfolioNo2)
+
+	![avatar](./img/imgpt002.jpg)
+
+- [Portfoilo No.3: A Game Made with Teammates Using GameMaker Studio](https://github.com/TomJinW/PortfolioNo3)
+
+	![avatar](./img/imgpt003.jpg)

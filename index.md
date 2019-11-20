@@ -19,7 +19,11 @@
 
 I currently have three of them to hand in, each of them has its own project website.
 
-- [Portfoilo No.1:An iOS App using Swift, Objective-C and C++](https://www.dropbox.com/s/hfv8mkxu996wwe9/Portfolio.1.CUI_ZHENYU.zip?dl=0)
+- [Portfoilo No.1:An iOS App using Swift, Objective-C and C++, Introduction](https://github.com/TomJinW/PortfolioNo1)
+	
+	[Portfoilo No.1:An iOS App using Swift, Objective-C and C++, Download Link](https://www.dropbox.com/s/hfv8mkxu996wwe9/Portfolio.1.CUI_ZHENYU.zip?dl=0)
+	
+	The download link for code is uploaded to Dropbox due to some reasons.
 
 	![avatar](./img/imgpt001.jpg)
 

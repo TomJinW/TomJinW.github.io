@@ -23,7 +23,7 @@ I currently have three of them to hand in, each of them has its own project webs
 	
 	[Portfoilo No.1:An iOS App using Swift, Objective-C and C++, Download Link](https://www.dropbox.com/s/hfv8mkxu996wwe9/Portfolio.1.CUI_ZHENYU.zip?dl=0)
 	
-	The download link for code is uploaded to Dropbox due to some reasons.
+	The download link for code is posted other than Github due to some reasons.
 
 	![avatar](./img/imgpt001.jpg)
 

@@ -31,4 +31,3 @@ I currently have three of them to hand in, each of them has its own project webs
 
 	![avatar](./img/imgpt003.jpg)
     
-- [Unity Play test](./UnityPlayTest/index.html)

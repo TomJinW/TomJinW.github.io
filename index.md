@@ -20,25 +20,42 @@
 </table>
 
 ## About the Portfolios
+- [**Map Design, Map Event Programming, UI/UX Design & Programming**] [GottaBattleThemAll: an RPG game where you can battle monsters on the field](https://github.com/TomJinW/GottaBattleThemAll)
+- [Play the Game Online](https://tomjinw.github.io/UnityPlayroom/GottaBattleThemAll/)
+![avatar](./img/img7.png)
+![avatar](./img/img8.png)
 
-- [**macOS Software Engineering**] [A *.mobileconfig Generator](https://github.com/TomJinW/FontGen_4iOS_Mac)
-![avatar](./img/img5.png)
-
-- [**UI/UX**] [Portfolio: A Tower Defense Game](https://github.com/TomJinW/ATowerDefenseGame)
-![avatar](./img/img4.png)
-
+***
+ 
 - [**Game Design, UI/UX, Programming**] [Color-IT: A game which focused on simulating the experience of people with color-blindness.](https://tomjinw.github.io/UnityPlayroom/)
 ![avatar](./img/img6.png)
+
+***
+
+- [**UI/UX**] [Portfolio: A Tower Defense Game](https://github.com/TomJinW/ATowerDefenseGame)
+- [Play The Game Online](https://tomjinw.github.io/UnityPlayroom/TowerDefense/)
+![avatar](./img/img4.png)
+
+***
+
+- [**Programming & Game Design**] [Portfolio: A Simple Game using C++, Kinect SDK and Direct2D](https://github.com/TomJinW/PortfolioNo2)
+![avatar](./img/imgpt002.jpg)
+
+***
+
+- [**Game Design**] [Portfolio: A Game Made with Teammates Using GameMaker Studio](https://github.com/TomJinW/PortfolioNo3)
+![avatar](./img/imgpt003.jpg)
+
+***
 
 - [**iOS Software Engineering**] [Portfolio: An iOS App using Swift, Objective-C and C++, Introduction](https://github.com/TomJinW/PortfolioNo1)
 
  <img src="./img/imgpt001.jpg" alt="drawing" width="300"/>
 <img src="./img/img002.jpg" alt="drawing" width="300"/>
 
-- [**Programming & Game Design**] [Portfolio: A Simple Game using C++, Kinect SDK and Direct2D](https://github.com/TomJinW/PortfolioNo2)
+***
 
-	![avatar](./img/imgpt002.jpg)
-- [**Game Design**] [Portfolio: A Game Made with Teammates Using GameMaker Studio](https://github.com/TomJinW/PortfolioNo3)
+- [**macOS Software Engineering**] [A *.mobileconfig Generator](https://github.com/TomJinW/FontGen_4iOS_Mac)
+![avatar](./img/img5.png)
 
-	![avatar](./img/imgpt003.jpg)
     

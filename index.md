@@ -20,6 +20,10 @@
 </table>
 
 ## About the Portfolios
+- [**ARKit, iOS Development, Swift, Objective-C**] Developed iOS Apps using ARKit to scan and detect certain image, download, and display corresponding models in real world. Users can choose different models, translate, rotate the model. 
+- [Video Demo Link](https://www.youtube.com/watch?v=Wk32ukA0ADE)
+![avatar](./img/img10.png)
+
 - [**Map Design, Map Event Programming, UI/UX Design & Programming**] [GottaBattleThemAll: an RPG game where you can battle monsters on the field](https://github.com/TomJinW/GottaBattleThemAll)
 - [Play the Game Online](https://tomjinw.github.io/UnityPlayroom/GottaBattleThemAll/)
 ![avatar](./img/img7.png)

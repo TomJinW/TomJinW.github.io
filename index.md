@@ -67,4 +67,6 @@
 - [**macOS Software Engineering**] [A *.mobileconfig Generator](https://github.com/TomJinW/FontGen_4iOS_Mac)
 ![avatar](./img/img5.png)
 
+- [**Hobby Project**] [Pokemon Gold / Silver Simp. Chinese ROM Translation Project, Project Details in English](https://github.com/TomJinW/PKMN_GSCHS/blob/main/readme_en.md)
+![avatar](./img/img000.jpg)
     

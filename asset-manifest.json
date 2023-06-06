@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.b76accbb.chunk.css",
-    "main.js": "/static/js/main.7a8a7b38.chunk.js",
-    "main.js.map": "/static/js/main.7a8a7b38.chunk.js.map",
+    "main.js": "/static/js/main.94184c22.chunk.js",
+    "main.js.map": "/static/js/main.94184c22.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1ee738a9.js",
     "runtime-main.js.map": "/static/js/runtime-main.1ee738a9.js.map",
-    "static/js/2.06813b38.chunk.js": "/static/js/2.06813b38.chunk.js",
-    "static/js/2.06813b38.chunk.js.map": "/static/js/2.06813b38.chunk.js.map",
+    "static/js/2.b4024cc4.chunk.js": "/static/js/2.b4024cc4.chunk.js",
+    "static/js/2.b4024cc4.chunk.js.map": "/static/js/2.b4024cc4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.642fa2c308050f853a26f46085564f79.js": "/precache-manifest.642fa2c308050f853a26f46085564f79.js",
+    "precache-manifest.ecd74641c8ba174b17295370dc5c1542.js": "/precache-manifest.ecd74641c8ba174b17295370dc5c1542.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.b76accbb.chunk.css.map": "/static/css/main.b76accbb.chunk.css.map",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
@@ -33,6 +33,7 @@
     "static/media/ds.png": "/static/media/ds.c3aa3150.png",
     "static/media/dsc_logo.png": "/static/media/dsc_logo.63f707f2.png",
     "static/media/education.svg": "/static/media/education.3bab7a9d.svg",
+    "static/media/eternalsol.jpg": "/static/media/eternalsol.0875af33.jpg",
     "static/media/experience.svg": "/static/media/experience.a00ede3f.svg",
     "static/media/all.css": "/static/media/fa-solid-900.8e4a6dcc.eot",
     "static/media/feelingProud.svg": "/static/media/feelingProud.2936ce95.svg",
@@ -60,6 +61,7 @@
     "static/media/projects_image.svg": "/static/media/projects_image.b8ba9487.svg",
     "static/media/pwa.png": "/static/media/pwa.71408db7.png",
     "static/media/rit_logo.png": "/static/media/rit_logo.a8477158.png",
+    "static/media/ropetool.jpg": "/static/media/ropetool.5a23cbea.jpg",
     "static/media/scan.jpg": "/static/media/scan.95355187.jpg",
     "static/media/sht_logo.png": "/static/media/sht_logo.31e8c6bc.png",
     "static/media/stanford_logo.png": "/static/media/stanford_logo.2c497738.png",
@@ -72,8 +74,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1ee738a9.js",
-    "static/js/2.06813b38.chunk.js",
+    "static/js/2.b4024cc4.chunk.js",
     "static/css/main.b76accbb.chunk.css",
-    "static/js/main.7a8a7b38.chunk.js"
+    "static/js/main.94184c22.chunk.js"
   ]
 }

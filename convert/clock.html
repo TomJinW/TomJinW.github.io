@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="resources/clock.css">
+        <title>宝可梦金银 韩版汉化版/韩版，欧美版金银水晶版时钟重置工具</title>
+        <script src="resources/clock.js" defer></script>
+    </head>
+    <body>
+        <h1 id='title'>宝可梦金银 韩版汉化版/韩版，欧美版金银水晶时钟重置工具</h1>
+        <br>
+        关于时钟重置：在下方表格中输入中文/韩文训练家名称，零花钱，和训练家ID，重置密码会自动生成。
+        <br>
+        <br>
+        <h3>生成的密码适用于：</h3>
+        - 韩版，韩版汉化版：金、银
+        <br>
+        - 欧美版：金、银、水晶
+        <br>
+        <a href="https://codepen.io/sndream/pen/mdrEoEr" target="_blank">- CKN&口袋群星&DMG汉化版：水晶，请前往这里重置</a>
+
+        <br>
+        <br>
+        <h3>如何打开重置时钟界面：</h3>
+        <h4>此操作适用于欧美版金、银：</h4>
+        - 标题画面中按下 ↓ + SELECT + B
+        <br>
+        <h4>此操作适用于韩版/韩版汉化金银，以及欧美版水晶：</h4>
+        - 标题画面中按住 ↓ + SELECT + B
+        <br>
+        - 松开 ↓ + B 但是持续按住 SELECT
+        <br>
+        - 按住 ← + ↑
+        <br>
+        - 松开 SELECT
+        <br>
+        <br>
+
+        
+        <div class="container">
+            <div class="input">
+                <label for="name">名字</label>
+                <input name="name" maxlength="7"/>
+            </div>
+            <div class="input">
+                <label for="currentCash">零花钱</label>
+                <input name="currentCash" maxlength="6"/>
+            </div>
+            <div class="input">
+                <label for="id">训练家ID</label>
+                <input name="id" maxlength="5"/>
+            </div>
+            <div class="input">
+                <label for="password">密码</label>
+                <input name="password" readonly="readonly"/>
+            </div>
+        </div>
+    </body>
+</html>

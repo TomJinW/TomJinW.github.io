@@ -72,7 +72,7 @@ function showTable() {
 }
 
 async function loadTable() {
-    const response = await fetch("table.txt");
+    const response = await fetch("resources/table.txt");
     const text = await response.text();
     const table_textarea = document.querySelector("textarea#codeTable");
     table_textarea.value = text;

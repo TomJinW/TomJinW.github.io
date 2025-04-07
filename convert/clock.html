@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GSC Clock Password Generator</title>
+        <script type="text/javascript" src="resources/script.js" ></script>
+        <script type="text/javascript" src="resources/password.js"></script>
+        <link rel="stylesheet" type="text/css" href="resources/style.css">
+    </head>
+    <body class="cursorDefault">
+        <h1>宝可梦·金银水晶时钟重置密码生成器</h1>
+        <h4>源代码来自 <a href="https://bl4cksh4rk.github.io/Pokemon-GSC-Clock-Password-Generator/" target="_blank">https://bl4cksh4rk.github.io/Pokemon-GSC-Clock-Password-Generator/</a></h4>
+        <h4>根据源工程 GPLv3 协议，本页面源代码<a href="tomjinw.github.io/clock-src.zip" target="_blank">下载地址</a></h4>
+        <h3>生成的密码适用于：</h3>
+        - 韩版，韩版汉化版：金、银
+        <br>
+        - 欧美版：金、银、水晶
+        <br>
+        <a href="https://codepen.io/sndream/pen/mdrEoEr" target="_blank">- CKN&口袋群星&DMG汉化版水晶，新美版汉化版金/银：请前往这里重置</a>
+        <br>
+        <br>
+        <br>
+        <table align="center">
+            <tr>
+                <td>
+                    训练家名称
+                </td>
+                <td>
+                    <input type="text" class="input" id="name" maxlength="7">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    训练家 ID
+                </td>
+                <td>
+                    <input type="text" class="input" id="tid" maxlength="5">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    手持零花钱
+                </td>
+                <td>
+                    <input type="text" class="input" id="money" maxlength="6">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    游戏区域
+                </td>
+                <td>
+                    <label class="cursorPointer">
+                        <input type="radio" name="region" id="eur" checked>欧美版
+                    </label>
+                    <br>
+                    <label class="cursorPointer">
+                        <input type="radio" name="region" id="kor">韩版 / 韩版汉化
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="generateButtonRow">
+                    <input type="button" value="生成密码" onClick="generatePassword();" class="cursorPointer">
+                </td>
+            </tr>
+            <tr>
+                <td class="resultBox">
+                    密码：
+                </td>
+                <td class="resultBox">
+                    <span id="password"></span>
+                </td>
+            </tr>
+        </table>
+
+        <div id="instructions" onClick="showHide('instructionsContent');" class="cursorPointer">
+            如何进入重置页面 
+            <span id="hide">
+                显示/隐藏
+            </span>
+        </div>
+        <div id="instructionsContent">
+            <div id="gsEUUS">
+                <div class="instructionTitle">
+                    欧美版 金/银
+                </div>
+                - 在标题画面按住 ↓ + SELECT + B
+            </div>
+            <div id="cEUUS">
+                <div class="instructionTitle">
+                    欧美版 水晶 + 韩版（汉化） 金/银
+                </div>
+                - 标题画面中按住 ↓ + SELECT + B<br>
+                - 松开 ↓ + B 但是持续按住 SELECT<br>
+                - 按住 ← + ↑<br>
+                - 松开 SELECT
+            </div>
+            <div id="gscJAP">
+                <div class="instructionTitle">
+                    日版 金/银/水晶
+                </div>
+                - 日版游戏不支持本功能！
+            </div>
+            <div id="specialCharacters">
+                <div class="instructionTitle">
+                    特殊字符 (欧美版)
+                </div>
+                P<sub>K</sub>&nbsp;&nbsp;&#x2259;&nbsp;&nbsp;
+                <span class="cursorText">
+                    {
+                </span>
+                <br>
+                M<sub>N</sub>&nbsp;&nbsp;&#x2259;&nbsp;&nbsp;
+                <span class="cursorText">
+                    }
+                </span>
+                <br>
+                <span class="cursorText">
+                    ×
+                </span>
+            </div>
+        </div>
+    </body>
+</html> 

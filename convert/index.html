@@ -1,0 +1,2378 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>宝可梦 金银 韩版汉化版/韩版文字转换工具</title>
+        <link rel="stylesheet" href="resources/main.css">
+        <script src="resources/main.js"></script>
+    </head>
+    <body>
+        <h1 id='title'>宝可梦 金银 韩版汉化版/韩版文字转换工具</h1>
+        关于时钟重置/获取时钟重置密码：
+        <br>
+        <a href="clock.html" target="_blank">韩版汉化金银请前往这里</a>
+        <br>
+        <a href="https://bl4cksh4rk.github.io/Pokemon-GSC-Clock-Password-Generator/" target="_blank">韩版/欧美原版游戏请前往这里</a>
+        <br>
+        <a href="https://codepen.io/sndream/pen/mdrEoEr" target="_blank">美版汉化金/银/水晶请前往这里</a>
+        <br>
+        <br>
+        <div class="div-main">
+            <div class="div-io">
+                <label for="inputText">输入文本</label>
+                <br>
+                <textarea id='inputText' rows='30' cols='50'>宝可梦</textarea>
+            </div>
+            <div class="div-buttons">
+                <button onclick='getInputCode()' type='button'>获取输入码</button>
+                <button onclick='getKorean()' type='button'>转换成对应韩文</button>
+                <button onclick='getChinese()' type='button'>转换成对应中文</button>
+            </div>
+            <div class="div-io">
+                <label for="result">输出结果</label>
+                <br>
+                <textarea id='result' rows='30' cols='50'>{宝:P U D}{可:A g H}{梦:A r E}</textarea>    
+            </div>    
+        </div>
+        <div class="div-table">
+            <button id="btnShowTable" type="button" onclick="showTable()">修改码表</button>
+            <div id="tableContainer" style="display: none;">
+                <label for='codeTable'>码表 非必要请勿修改</label>
+                <br>
+                <textarea  id='codeTable' rows='20' cols='20'>
+妙,가,A U
+蛙,각,A U A
+种,간,A U B
+子,갇,A U C
+草,갈,A U D
+花,갉,A U DA
+小,갊,A U DE
+火,감,A U E
+龙,갑,A U F
+恐,값,A U FG
+喷,갓,A U G
+杰,갔,A U S
+尼,강,A U H
+龟,갖,A U J
+卡,갗,A U K
+咪,같,A U M
+水,갚,A U N
+箭,갛,A U O
+绿,개,A e
+毛,객,A e A
+铁,갤,A e D
+甲,갬,A e E
+蛹,갭,A e F
+巴,갯,A e G
+大,갰,A e S
+蝶,갱,A e H
+独,갸,A V
+角,갹,A V A
+壳,갼,A V B
+针,걀,A V D
+蜂,걋,A V G
+波,걍,A V H
+比,걔,A f
+鸟,걘,A f B
+拉,걜,A f D
+达,거,A W
+烈,걱,A W A
+雀,건,A W B
+嘴,걷,A W C
+阿,걸,A W D
+柏,걺,A W DE
+蛇,검,A W E
+怪,겁,A W F
+皮,것,A W G
+丘,겄,A W S
+雷,겅,A W H
+穿,겆,A W J
+山,겉,A W M
+鼠,겊,A W N
+王,겋,A W O
+多,게,A g
+兰,겐,A g B
+娜,겔,A g D
+后,겜,A g E
+朗,겝,A g F
+力,겟,A g G
+诺,겠,A g S
+可,겡,A g H
+西,겨,A X
+访,격,A X A
+尾,겪,A X P
+九,견,A X B
+胖,겯,A X C
+丁,결,A X D
+超,겸,A X E
+音,겹,A X F
+蝠,겻,A X G
+走,겼,A X S
+路,경,A X H
+臭,곁,A X M
+霸,계,A h
+派,곈,A h B
+斯,곌,A h D
+特,곕,A h F
+球,곗,A h G
+摩,고,A Y
+鲁,곡,A Y A
+蛾,곤,A Y B
+地,곧,A Y C
+层,골,A Y D
+喵,곪,A Y DE
+猫,곬,A Y DG
+老,곯,A Y DO
+鸭,곰,A Y E
+哥,곱,A Y F
+猴,곳,A Y G
+暴,공,A Y H
+蒂,곶,A Y J
+狗,과,A i
+风,곽,A i A
+速,관,A i B
+蚊,괄,A i D
+香,괆,A i DE
+蝌,괌,A i E
+蚪,괍,A i F
+君,괏,A i G
+泳,광,A i H
+士,괘,A j
+凯,괜,A j B
+勇,괠,A j D
+基,괩,A j F
+胡,괬,A j S
+腕,괭,A j H
+豪,괴,A k
+喇,괵,A k A
+叭,괸,A k B
+芽,괼,A k D
+口,굄,A k E
+呆,굅,A k F
+食,굇,A k G
+玛,굉,A k H
+瑙,교,A Z
+母,굔,A Z B
+毒,굘,A Z D
+刺,굡,A Z F
+拳,굣,A Z G
+石,구,A a
+隆,국,A a A
+岩,군,A a B
+马,굳,A a C
+焰,굴,A a D
+兽,굵,A a DA
+磁,굶,A a DE
+合,굻,A a DO
+怜,굼,A a E
+葱,굽,A a F
+嘟,굿,A a G
+利,궁,A a H
+海,궂,A a J
+狮,궈,A m
+白,궉,A m A
+泥,권,A m B
+舌,궐,A m D
+贝,궜,A m S
+鬼,궝,A m H
+通,궤,A n
+耿,궷,A n G
+催,귀,A r
+眠,귁,A r A
+貘,귄,A r B
+引,귈,A r D
+梦,귐,A r E
+人,귑,A r F
+钳,귓,A r G
+蟹,규,A b
+巨,균,A b B
+霹,귤,A b D
+雳,그,A c
+电,극,A c A
+顽,근,A c B
+弹,귿,A c C
+维,글,A c D
+椰,긁,A c DA
+五,금,A c E
+嘎,급,A c F
+啦,긋,A c G
+飞,긍,A c H
+腿,긔,A t
+郎,기,A d
+快,긱,A d A
+头,긴,A d B
+瓦,긷,A d C
+双,길,A d D
+犀,긺,A d DE
+牛,김,A d E
+钻,깁,A d F
+吉,깃,A d G
+蔓,깅,A d H
+藤,깆,A d J
+袋,깊,A d N
+墨,까,P U
+金,깍,P U A
+鱼,깎,P U P
+星,깐,P U B
+宝,깔,P U D
+魔,깖,P U DE
+墙,깜,P U E
+偶,깝,P U F
+天,깟,P U G
+螳,깠,P U S
+螂,깡,P U H
+迷,깥,P U M
+唇,깨,P e
+姐,깩,P e A
+击,깬,P e B
+罗,깰,P e D
+肯,깸,P e E
+泰,깹,P e F
+鲤,깻,P e G
+普,깼,P e S
+百,깽,P e H
+变,꺄,P V
+伊,꺅,P V A
+布,꺌,P V D
+边,꺼,P W
+菊,꺽,P W A
+化,꺾,P W P
+盔,껀,P W B
+镰,껄,P W D
+刀,껌,P W E
+翼,껍,P W F
+急,껏,P W G
+冻,껐,P W S
+闪,껑,P W H
+你,께,P g
+哈,껙,P g A
+克,껜,P g B
+幻,껨,P g E
+叶,껫,P g G
+月,껭,P g H
+桂,껴,P X
+竺,껸,P X B
+葵,껼,P X D
+锯,꼇,P X G
+鳄,꼈,P X S
+蓝,꼍,P X M
+立,꼐,P h
+咕,꼬,P Y
+夜,꼭,P Y A
+鹰,꼰,P Y B
+芭,꼲,P Y BO
+瓢,꼴,P Y D
+安,꼼,P Y E
+圆,꼽,P Y F
+丝,꼿,P Y G
+蛛,꽁,P Y H
+叉,꽂,P Y J
+字,꽃,P Y K
+灯,꽈,P i
+笼,꽉,P i A
+古,꽐,P i D
+然,꽜,P i S
+羊,꽤,P j
+茸,꽥,P j A
+才,꽹,P j H
+露,꾀,P k
+丽,꾄,P k B
+皇,꾈,P k D
+毽,꾐,P k E
+棉,꾑,P k F
+长,꾕,P k H
+手,꾜,P Z
+向,꾸,P a
+祈,꾹,P a A
+蜻,꾼,P a B
+蜓,꿀,P a D
+乌,꿇,P a DO
+沼,꿈,P a E
+太,꿉,P a F
+阳,꿋,P a G
+亮,꿍,P a H
+黑,꿎,P a J
+暗,꿔,P m
+鸦,꿜,P m D
+未,꿩,P m H
+知,꿰,P n
+图,꿱,P n A
+腾,꿴,P n B
+果,꿸,P n D
+翁,뀀,P n E
+麒,뀁,P n F
+麟,뀄,P n S
+奇,뀌,P r
+榛,뀐,P r B
+佛,뀔,P r D
+托,뀜,P r E
+土,뀝,P r F
+弟,뀨,P b
+蝎,끄,P c
+钢,끅,P c A
+千,끈,P c B
+壶,끊,P c BO
+赫,끌,P c D
+狃,끎,P c DE
+熊,끓,P c DO
+圈,끔,P c E
+熔,끕,P c F
+蜗,끗,P c G
+猪,끙,P c H
+关,끝,P c M
+瑚,끼,P d
+炮,끽,P d A
+章,낀,P d B
+桶,낄,P d D
+信,낌,P d E
+使,낍,P d F
+翅,낏,P d G
+戴,낑,P d H
+加,나,B U
+象,낙,B U A
+顿,낚,B U P
+型,난,B U B
+惊,낟,B U C
+鹿,날,B U D
+犬,낡,B U DA
+无,낢,B U DE
+畏,남,B U E
+战,납,B U F
+舞,낫,B U G
+娃,났,B U S
+奶,낭,B U H
+罐,낮,B U J
+幸,낯,B U K
+福,낱,B U M
+公,낳,B U O
+炎,내,B e
+帝,낵,B e A
+幼,낸,B e B
+沙,낼,B e D
+班,냄,B e E
+洛,냅,B e F
+亚,냇,B e G
+凤,냈,B e S
+时,냉,B e H
+拍,냐,B V
+空,냑,B V A
+劈,냔,B V B
+连,냘,B V D
+环,냠,B V E
+掌,냥,B V H
+续,너,B W
+万,넉,B W A
+吨,넋,B W AG
+重,넌,B W B
+聚,널,B W D
+功,넒,B W DE
+冰,넓,B W DF
+抓,넘,B W E
+夹,넙,B W F
+住,넛,B W G
+断,넜,B W S
+旋,넝,B W H
+剑,넣,B W O
+居,네,B g
+斩,넥,B g A
+起,넨,B g B
+膀,넬,B g D
+攻,넴,B g E
+吹,넵,B g F
+翔,넷,B g G
+绑,넸,B g S
+紧,넹,B g H
+摔,녀,B X
+打,녁,B X A
+鞭,년,B X B
+踩,녈,B X D
+踏,념,B X E
+趟,녑,B X F
+踢,녔,B X S
+回,녕,B X H
+泼,녘,B X L
+锤,녜,B h
+撞,녠,B h B
+乱,노,B Y
+压,녹,B Y A
+顶,논,B Y B
+束,놀,B Y D
+猛,놂,B Y DE
+闹,놈,B Y E
+番,놉,B Y F
+舍,놋,B Y G
+身,농,B Y H
+冲,높,B Y N
+摇,놓,B Y O
+瞪,놔,B i
+眼,놘,B i B
+咬,놜,B i D
+叫,놨,B i S
+声,뇌,B k
+吼,뇐,B k B
+唱,뇔,B k D
+歌,뇜,B k E
+爆,뇝,B k F
+定,뇟,B k G
+法,뇨,B Z
+溶,뇩,B Z A
+解,뇬,B Z B
+液,뇰,B Z D
+射,뇹,B Z F
+雾,뇻,B Z G
+枪,뇽,B Z H
+浪,누,B a
+光,눅,B a A
+雪,눈,B a B
+线,눋,B a C
+泡,눌,B a D
+沫,눔,B a E
+极,눕,B a F
+破,눗,B a G
+坏,눙,B a H
+啄,눠,B m
+狱,눴,B m S
+翻,눼,B n
+滚,뉘,B r
+倒,뉜,B r B
+倍,뉠,B r D
+奉,뉨,B r E
+还,뉩,B r F
+上,뉴,B b
+投,뉵,B b A
+吸,뉼,B b D
+取,늄,B b E
+级,늅,B b F
+寄,늉,B b H
+生,느,B c
+粉,늑,B c A
+麻,는,B c B
+痹,늘,B c D
+瓣,늙,B c DA
+吐,늚,B c DE
+之,늠,B c E
+怒,늡,B c F
+涡,늣,B c G
+十,능,B c H
+伏,늦,B c J
+落,늪,B c N
+震,늬,B t
+裂,늰,B t B
+挖,늴,B t D
+洞,니,B d
+剧,닉,B d A
+念,닌,B d B
+精,닐,B d D
+神,닒,B d DE
+强,님,B d E
+术,닙,B d F
+瑜,닛,B d G
+伽,닝,B d H
+姿,닢,B d N
+势,다,C U
+高,닥,C U A
+移,닦,C U P
+动,단,C U B
+愤,닫,C U C
+瞬,달,C U D
+间,닭,C U DA
+影,닮,C U DE
+模,닯,C U DF
+仿,닳,C U DO
+耳,담,C U E
+别,답,C U F
+自,닷,C U G
+我,닸,C U S
+再,당,C U H
+硬,닺,C U J
+烟,닻,C U K
+幕,닿,C U O
+异,대,C e
+缩,댁,C e A
+入,댄,C e B
+中,댈,C e D
+屏,댐,C e E
+障,댑,C e F
+反,댓,C e G
+壁,댔,C e S
+气,댕,C e H
+忍,댜,C V
+耐,더,C W
+挥,덕,C W A
+指,덖,C W P
+鹦,던,C W B
+鹉,덛,C W C
+学,덜,C W D
+炸,덞,C W DE
+舔,덟,C W DF
+浊,덤,C W E
+骨,덧,C W G
+棒,덩,C W H
+攀,덫,C W K
+瀑,덮,C W N
+尖,데,C g
+农,덱,C g A
+缠,덴,C g B
+绕,델,C g D
+失,뎀,C g E
+忆,뎁,C g F
+折,뎃,C g G
+弯,뎄,C g S
+汤,뎅,C g H
+匙,뎌,C X
+膝,뎐,C X B
+血,뎔,C X D
+恶,뎠,C X S
+吻,뎡,C X H
+昏,뎨,C h
+蘑,뎬,C h B
+孢,독,C Y A
+跃,돈,C Y B
+镖,돋,C Y C
+睡,돌,C Y D
+觉,돎,C Y DE
+崩,돐,C Y DG
+必,돔,C Y E
+杀,돕,C Y F
+门,돗,C Y G
+牙,동,C Y H
+棱,돛,C Y K
+纹,돝,C Y M
+理,돠,C i
+开,돤,C i B
+替,돨,C i D
+挣,돼,C j
+扎,됐,C j S
+写,되,C k
+偷,된,C k B
+网,될,C k D
+心,됨,C k E
+轮,됩,C k F
+鼾,됫,C k G
+诅,됴,C Z
+咒,두,C a
+狂,둑,C a A
+死,둔,C a B
+怨,둘,C a D
+恨,둠,C a E
+细,둡,C a F
+守,둣,C a G
+面,둥,C a H
+出,둬,C m
+腹,뒀,C m S
+鼓,뒈,C n
+掷,뒝,C n H
+撒,뒤,C r
+菱,뒨,C r B
+识,뒬,C r D
+同,뒵,C r F
+命,뒷,C r G
+灭,뒹,C r H
+亡,듀,C b
+看,듄,C b B
+锁,듈,C b D
+逆,듐,C b E
+鳞,듕,C b H
+终,드,C c
+挺,득,C c A
+娇,든,C c B
+点,듣,C c C
+到,들,C c D
+为,듦,C c DE
+止,듬,C c E
+虚,듭,C c F
+张,듯,C c G
+喝,등,C c H
+色,듸,C t
+目,디,C d
+话,딕,C d A
+治,딘,C d B
+愈,딛,C d C
+铃,딜,C d D
+报,딤,C d E
+恩,딥,C d F
+礼,딧,C d G
+物,딨,C d S
+迁,딩,C d H
+做,딪,C d J
+护,따,Q U
+担,딱,Q U A
+痛,딴,Q U B
+楚,딸,Q U D
+圣,땀,Q U E
+息,땁,Q U F
+接,땃,Q U G
+来,땄,Q U S
+次,땅,Q U H
+追,땋,Q U O
+转,때,Q e
+甜,땍,Q e A
+属,땐,Q e B
+爪,땔,Q e D
+借,땜,Q e E
+晨,땝,Q e F
+作,땟,Q e G
+用,땠,Q e S
+醒,땡,Q e H
+量,떠,Q W
+卷,떡,Q W A
+求,떤,Q W B
+雨,떨,Q W D
+晴,떪,Q W DE
+碎,떫,Q W DF
+镜,떰,Q W E
+示,떱,Q W F
+原,떳,Q W G
+始,떴,Q W S
+预,떵,Q W H
+潮,떻,Q W O
+围,떼,Q g
+鉴,떽,Q g A
+背,뗀,Q g B
+包,뗄,Q g D
+记,뗌,Q g E
+录,뗍,Q g F
+设,뗏,Q g G
+置,뗐,Q g S
+珊,뗑,Q g H
+闭,뗘,Q X
+齿,뗬,Q X S
+师,또,Q Y
+灵,똑,Q Y A
+行,똔,Q Y B
+车,똘,Q Y D
+药,똥,Q Y H
+灼,똬,Q i
+伤,똴,Q i D
+全,뙈,Q j
+复,뙤,Q k
+满,뙨,Q k B
+厉,뚜,Q a
+害,뚝,Q a A
+好,뚠,Q a B
+离,뚤,Q a D
+绳,뚫,Q a DO
+除,뚬,Q a E
+项,뚱,Q a H
+补,뛔,Q n
+充,뛰,Q r
+剂,뛴,Q r B
+增,뛸,Q r D
+防,뜀,Q r E
+御,뜁,Q r F
+度,뜅,Q r H
+糖,뜨,Q c
+珠,뜩,Q c A
+玩,뜬,Q c B
+活,뜯,Q c C
+片,뜰,Q c D
+块,뜸,Q c E
+能,뜹,Q c F
+银,뜻,Q c G
+黄,띄,Q t
+要,띈,Q t B
+美,띌,Q t D
+味,띔,Q t E
+劲,띕,Q t F
+爽,띠,Q d
+汽,띤,Q d B
+汁,띨,Q d D
+代,띰,Q d E
+币,띱,Q d F
+盒,띳,Q d G
+探,띵,Q d H
+器,라,D U
+习,락,D U A
+装,란,D U B
+旧,랄,D U D
+钓,람,D U E
+竿,랍,D U F
+提,랏,D U G
+升,랐,D U S
+单,랑,D U H
+红,랒,D U J
+传,랖,D U N
+船,랗,D U O
+票,래,D e
+透,랙,D e A
+明,랜,D e B
+铛,랠,D e D
+羽,램,D e E
+哞,랩,D e F
+鲜,랫,D e G
+先,랬,D e S
+制,랭,D e H
+的,랴,D V
+实,략,D V A
+锐,랸,D V B
+柔,럇,D V G
+软,량,D V H
+消,러,D W
+烧,럭,D W A
+烤,런,D W B
+者,럴,D W D
+证,럼,D W E
+苦,럽,D W F
+涩,럿,D W G
+薄,렀,D W S
+荷,렁,D W H
+符,렇,D W O
+洁,레,D g
+净,렉,D g A
+滴,렌,D g B
+曲,렐,D g D
+带,렘,D g E
+不,렙,D g F
+融,렛,D g G
+迹,렝,D g H
+珍,려,D X
+馒,력,D X A
+粗,련,D X B
+元,렬,D X D
+根,렴,D X E
+运,렵,D X F
+钥,렷,D X G
+机,렸,D X S
+械,령,D X H
+零,례,D h
+件,롄,D h B
+遗,롑,D h F
+下,롓,D h G
+木,록,D Y A
+炭,론,D Y B
+焦,롤,D Y D
+膜,롬,D Y E
+吃,롭,D Y F
+剩,롯,D Y G
+东,롱,D Y H
+因,롸,D i
+灰,롼,D i B
+沉,뢍,D i H
+案,뢨,D j S
+邮,뢰,D k
+等,뢴,D k B
+诱,뢸,D k D
+饵,룀,D k E
+友,룁,D k F
+蜜,룃,D k G
+箱,룅,D k H
+桐,료,D Z
+玉,룐,D Z B
+数,룔,D Z D
+据,룝,D Z F
+虹,룡,D Z H
+砖,루,D a
+肖,룩,D a A
+像,룬,D a B
+爱,룰,D a D
+继,룸,D a E
+冒,룹,D a F
+险,룻,D a G
+新,룽,D a H
+更,뤄,D m
+改,뤘,D m S
+钟,뤠,D n
+已,뤼,D r
+获,뤽,D r A
+得,륀,D r B
+徽,륄,D r D
+个,륌,D r E
+当,륏,D r G
+前,륑,D r H
+只,류,D b
+主,륙,D b A
+对,륜,D b B
+斗,률,D b D
+画,륨,D b E
+规,륩,D b F
+则,륫,D b G
+菜,륭,D b H
+说,르,D c
+窗,륵,D c A
+慢,른,D c B
+交,를,D c D
+换,름,D c E
+道,릅,D c F
+体,릇,D c G
+显,릉,D c H
+保,릊,D c J
+存,릍,D c M
+吗,릎,D c N
+正,리,D d
+在,릭,D d A
+请,린,D d B
+切,릴,D d D
+源,림,D d E
+完,립,D d F
+了,릿,D d G
+将,링,D d H
+覆,마,E U
+盖,막,E U A
+问,만,E U B
+以,많,E U BO
+另,맏,E U C
+份,말,E U D
+并,맑,E U DA
+内,맒,E U DE
+容,맘,E U E
+发,맙,E U F
+损,맛,E U G
+若,망,E U H
+需,맞,E U J
+本,맡,E U M
+每,맣,E U O
+候,매,E e
+就,맥,E e A
+会,맨,E e B
+载,맬,E e D
+详,맴,E e E
+查,맵,E e F
+状,맷,E e G
+态,맸,E e S
+放,맹,E e H
+各,맺,E e J
+类,먀,E V
+具,먁,E V A
+训,먈,E V D
+练,먕,E V H
+家,머,E W
+导,먹,E W A
+航,먼,E W B
+含,멀,E W D
+有,멂,E W DE
+工,멈,E W E
+游,멉,E W F
+戏,멋,E W G
+位,멍,E W H
+持,멎,E W J
+返,멓,E W O
+招,메,E g
+式,멕,E g A
+列,멘,E g B
+表,멜,E g D
+般,멤,E g E
+格,멥,E g F
+幽,멧,E g G
+亲,멨,E g S
+性,멩,E g H
+经,며,E X
+验,멱,E X A
+值,면,E X B
+病,멸,E X D
+品,몃,E X G
+选,몄,E X S
+择,명,E X H
+哪,몇,E X K
+教,몌,E h
+里,모,E Y
+四,목,E Y A
+雄,몫,E Y AG
+任,몬,E Y B
+何,몰,E Y D
+名,몲,E Y DE
+钱,몸,E Y E
+镇,몹,E Y F
+市,못,E Y G
+桔,몽,E Y H
+梗,뫄,E i
+桧,뫈,E i B
+缘,뫘,E i S
+朱,뫙,E i H
+浅,뫼,E k
+湛,묀,E k B
+湖,묄,E k D
+塔,묍,E k F
+穴,묏,E k G
+井,묑,E k H
+台,묘,E Z
+厂,묜,E Z B
+辉,묠,E Z D
+漩,묩,E Z F
+岛,묫,E Z G
+擂,무,E a
+钵,묵,E a A
+真,묶,E a P
+常,문,E a B
+青,묻,E a C
+深,물,E a D
+华,묽,E a DA
+紫,묾,E a DE
+苑,뭄,E a E
+枯,뭅,E a F
+莲,뭇,E a G
+英,뭉,E a H
+冠,뭍,E a M
+军,뭏,E a O
+见,뭐,E m
+隧,뭔,E m B
+都,뭘,E m D
+尔,뭡,E m F
+司,뭣,E m G
+狩,뭬,E n
+猎,뮈,E r
+屋,뮌,E r B
+窟,뮐,E r D
+号,뮤,E b
+栎,뮨,E b B
+林,뮬,E b D
+流,뮴,E b E
+森,뮷,E b G
+城,므,E c
+雌,믄,E c B
+树,믈,E c D
+按,믐,E c E
+意,믓,E c G
+键,미,E d
+想,믹,E d A
+给,민,E d B
+谁,믿,E d C
+呢,밀,E d D
+删,밂,E d DE
+弃,밈,E d E
+搜,밉,E d F
+索,밋,E d G
+韩,밌,E d S
+文,밍,E d H
+顺,및,E d K
+序,밑,E d M
+进,바,F U
+标,박,F U A
+准,밖,F U P
+编,밗,F U AG
+捕,반,F U B
+版,받,F U C
+现,발,F U D
+威,밝,F U DA
+逃,밞,F U DE
+跑,밟,F U DF
+丢,밤,F U E
+登,밥,F U F
+否,밧,F U G
+是,방,F U H
+捉,밭,F U M
+最,배,F e
+较,백,F e A
+概,밴,F e B
+率,밸,F e D
+该,뱀,F e E
+降,뱁,F e F
+低,뱃,F e G
+方,뱄,F e S
+够,뱅,F e H
+两,뱉,F e M
+叠,뱌,F V
+让,뱍,F V A
+疗,뱐,F V B
+恢,뱝,F V F
+部,버,F W
+所,벅,F W A
+步,번,F W B
+遇,벋,F W C
+弱,벌,F W D
+础,벎,F W DE
+易,범,F W E
+和,법,F W F
+纯,벙,F W H
+造,벚,F W J
+商,베,F g
+店,벡,F g A
+卖,벤,F g B
+价,벧,F g C
+脱,벨,F g D
+与,벰,F g E
+野,벱,F g F
+濒,벳,F g G
+半,벴,F g S
+从,벵,F g H
+清,벼,F X
+很,벽,F X A
+隐,변,F X B
+藏,별,F X D
+应,볍,F X F
+其,볏,F X G
+他,볐,F X S
+共,병,F X H
+垂,볘,F h
+于,볜,F h B
+稍,보,F Y
+微,복,F Y A
+而,볶,F Y P
+闻,본,F Y B
+技,볼,F Y D
+健,봄,F Y E
+康,봅,F Y F
+搭,봇,F Y G
+乘,봉,F Y H
+券,봐,F i
+爷,봔,F i B
+那,봤,F i S
+什,봬,F j
+么,뵀,F j S
+芒,뵈,F k
+富,뵉,F k A
+营,뵌,F k B
+养,뵐,F k D
+陷,뵘,F k E
+怕,뵙,F k F
+混,뵤,F Z
+贵,뵨,F Z B
+售,부,F a
+难,북,F a A
+分,분,F a B
+产,붇,F a C
+某,불,F a D
+几,붉,F a DA
+额,붊,F a DE
+外,붐,F a E
+启,붑,F a F
+广,붓,F a G
+播,붕,F a H
+帘,붙,F a M
+少,붚,F a N
+女,붜,F m
+幅,붤,F m D
+但,붰,F m S
+印,붸,F n
+卉,뷔,F r
+纸,뷕,F r A
+越,뷘,F r B
+密,뷜,F r D
+植,뷩,F r H
+浇,뷰,F b
+彩,뷴,F b B
+样,뷸,F b D
+脑,븀,F b E
+殿,븃,F b G
+堂,븅,F b H
+整,브,F c
+呼,븍,F c A
+系,븐,F c B
+统,블,F c D
+评,븜,F c E
+受,븝,F c F
+成,븟,F c G
+秘,비,F d
+没,빅,F d A
+封,빈,F d B
+即,빌,F d D
+这,빎,F d DE
+被,빔,F d E
+塞,빕,F d F
+己,빗,F d G
+第,빙,F d H
+收,빚,F d J
+丛,빛,F d K
+寻,빠,R U
+找,빡,R U A
+吧,빤,R U B
+嗯,빨,R U D
+去,빪,R U DE
+如,빰,R U E
+擅,빱,R U F
+远,빳,R U G
+努,빴,R U S
+善,빵,R U H
+靠,빻,R U O
+响,빼,R e
+喜,빽,R e A
+欢,뺀,R e B
+集,뺄,R e D
+些,뺌,R e E
+逐,뺍,R e F
+坚,뺏,R e G
+哇,뺐,R e S
+趣,뺑,R e H
+它,뺘,R V
+们,뺙,R V A
+帮,뺨,R V E
+助,뻐,R W
+仔,뻑,R W A
+研,뻔,R W B
+究,뻗,R W C
+朋,뻘,R W D
+过,뻠,R W E
+啊,뻣,R W G
+错,뻤,R W S
+待,뻥,R W H
+非,뻬,R g
+博,뼁,R g H
+专,뼈,R X
+祝,뼉,R X A
+贺,뼘,R X E
+阅,뼙,R X F
+读,뼛,R X G
+送,뼜,R X S
+足,뼝,R X H
+便,뽀,R Y
+调,뽁,R Y A
+确,뽄,R Y B
+题,뽈,R Y D
+隔,뽐,R Y E
+久,뽑,R Y F
+校,뽕,R Y H
+跳,뾔,R k
+或,뾰,R Z
+殴,뿅,R Z H
+拿,뿌,R a
+寒,뿍,R a A
+锋,뿐,R a B
+侧,뿔,R a D
+剪,뿜,R a E
+刃,뿟,R a G
+刮,뿡,R a H
+袭,쀼,R b
+展,쁑,R b H
+结,쁘,R c
+脚,쁜,R c B
+予,쁠,R c D
+穷,쁨,R c E
+败,쁩,R c F
+脸,삐,R d
+伸,삑,R d A
+扑,삔,R d B
+喙,삘,R d D
+也,삠,R d E
+许,삡,R d F
+拼,삣,R d G
+晃,삥,R d H
+听,사,G U
+殊,삭,G U A
+阻,삯,G U AG
+酸,산,G U B
+掀,삳,G U C
+巧,살,G U D
+甩,삵,G U DA
+相,삶,G U DE
+浑,삼,G U E
+末,삽,G U F
+散,삿,G U G
+困,샀,G U S
+松,상,G U H
+轻,샅,G U M
+盈,새,G e
+怖,색,G e A
+讨,샌,G e B
+厌,샐,G e D
+避,샘,G e E
+蜷,샙,G e F
+扰,샛,G e G
+固,샜,G e S
+减,생,G e H
+激,샤,G V
+遍,샥,G V A
+肮,샨,G V B
+形,샬,G V D
+尽,샴,G V E
+爬,샵,G V F
+把,샷,G V G
+触,샹,G V H
+忘,섀,G f
+事,섄,G f B
+注,섈,G f D
+掉,섐,G f E
+胞,섕,G f H
+父,서,G W
+孩,석,G W A
+耀,섞,G W P
+蹦,섟,G W AG
+敲,선,G W B
+峰,섣,G W C
+段,설,G W D
+黏,섦,G W DE
+感,섧,G W DF
+噜,섬,G W E
+效,섭,G W F
+抵,섯,G W G
+抗,섰,G W S
+贴,성,G W H
+怀,섶,G W N
+迅,세,G g
+着,섹,G g A
+疏,센,G g B
+备,셀,G g D
+近,셈,G g E
+周,셉,G g F
+冷,셋,G g G
+瞄,셌,G g S
+凝,셍,G g H
+视,셔,G X
+留,셕,G X A
+伴,션,G X B
+舒,셜,G X D
+适,셤,G X E
+优,셥,G X F
+秀,셧,G X G
+泄,셨,G X S
+平,셩,G X H
+敌,셴,G h B
+虽,셸,G h D
+兴,솅,G h H
+附,소,G Y
+团,속,G Y A
+参,솎,G Y P
+挑,손,G Y B
+尘,솔,G Y D
+计,솖,G Y DE
+纱,솜,G Y E
+仍,솝,G Y F
+停,솟,G Y G
+奖,송,G Y H
+励,솥,G Y M
+胜,솨,G i
+试,솩,G i A
+妈,솬,G i B
+输,솰,G i D
+途,솽,G i H
+捆,쇄,G j
+处,쇈,G j B
+懒,쇌,G j D
+令,쇗,G j G
+拔,쇘,G j S
+群,쇠,G k
+伙,쇤,G k B
+配,쇨,G k D
+吞,쇰,G k E
+境,쇱,G k F
+牢,쇳,G k G
+承,쇼,G Z
+抢,쇽,G Z A
+夺,숀,G Z B
+噩,숄,G Z D
+削,숌,G Z E
+照,숍,G Z F
+昵,숏,G Z G
+称,숑,G Z H
+三,수,G a
+楼,숙,G a A
+买,순,G a B
+床,숟,G a C
+毯,술,G a D
+盆,숨,G a E
+饰,숩,G a F
+壮,숫,G a G
+观,숭,G a H
+南,숯,G a K
+国,숱,G a M
+杯,숲,G a N
+右,숴,G m
+左,쉈,G m S
+惜,쉐,G n
+绩,쉑,G n A
+北,쉔,G n B
+局,쉘,G n D
+早,쉠,G n E
+晚,쉥,G n H
+讲,쉬,G r
+座,쉭,G r A
+乐,쉰,G r B
+频,쉴,G r D
+往,쉼,G r E
+语,쉽,G r F
+恭,쉿,G r G
+此,슁,G r H
+颁,슈,G b
+资,슉,G b A
+距,슐,G b D
+底,슘,G b E
+馆,슛,G b G
+员,슝,G b H
+短,스,G c
+裤,슥,G c A
+裙,슨,G c B
+队,슬,G c D
+绅,슭,G c DA
+滑,슴,G c E
+年,습,G c F
+科,슷,G c G
+男,승,G c H
+族,시,G d
+趁,식,G d A
+劫,신,G d B
+杂,싣,G d C
+耍,실,G d D
+艺,싫,G d DO
+餐,심,G d E
+尚,십,G d F
+婆,싯,G d G
+俱,싱,G d H
+服,싶,G d N
+胎,싸,S U
+警,싹,S U A
+察,싻,S U AG
+谜,싼,S U B
+睁,쌀,S U D
+唔,쌈,S U E
+抱,쌉,S U F
+歉,쌌,S U S
+哎,쌍,S U H
+呀,쌓,S U O
+今,쌔,S e
+搞,쌕,S e A
+余,쌘,S e B
+码,쌜,S e D
+决,쌤,S e E
+嘛,쌥,S e F
+喂,쌨,S e S
+昨,쌩,S e H
+购,썅,S V H
+房,써,S W
+告,썩,S W A
+叮,썬,S W B
+咚,썰,S W D
+稀,썲,S W DE
+又,썸,S W E
+缆,썹,S W F
+望,썼,S W S
+谢,썽,S W H
+考,쎄,S g
+虑,쎈,S g B
+哦,쎌,S g D
+拥,쏀,S h B
+算,쏘,S Y
+情,쏙,S Y A
+旅,쏜,S Y B
+管,쏟,S Y C
+怎,쏠,S Y D
+迎,쏢,S Y DE
+油,쏨,S Y E
+勉,쏩,S Y F
+培,쏭,S Y H
+育,쏴,S i
+故,쏵,S i A
+吓,쏸,S i B
+暂,쐈,S i S
+领,쐐,S j
+费,쐤,S j S
+儿,쐬,S k
+摄,쐰,S k B
+姓,쐴,S k D
+思,쐼,S k E
+似,쐽,S k F
+干,쑈,S Z
+授,쑤,S a
+误,쑥,S a A
+砍,쑨,S a B
+泻,쑬,S a D
+由,쑴,S a E
+推,쑵,S a F
+堵,쑹,S a H
+弄,쒀,S m
+骑,쒔,S m S
+棵,쒜,S n
+漆,쒸,S r
+孵,쒼,S r B
+刚,쓩,S b H
+乎,쓰,S c
+世,쓱,S c A
+界,쓴,S c B
+尊,쓸,S c D
+敬,쓺,S c DE
+互,쓿,S c DO
+直,씀,S c E
+艰,씁,S c F
+随,씌,S t
+范,씐,S t B
+协,씔,S t D
+临,씜,S t E
+廉,씨,S d
+呵,씩,S d A
+您,씬,S d B
+宜,씰,S d D
+办,씸,S d E
+忙,씹,S d F
+凑,씻,S d G
+齐,씽,S d H
+认,아,H U
+洗,악,H U A
+牌,안,H U B
+差,앉,H U BJ
+添,않,H U BO
+蛋,알,H U D
+笛,앍,H U DA
+节,앎,H U DE
+辛,앓,H U DO
+休,암,H U E
+书,압,H U F
+摆,앗,H U G
+志,았,H U S
+笔,앙,H U H
+条,앝,H U M
+赚,앞,H U N
+坛,애,H e
+玻,액,H e A
+璃,앤,H e B
+页,앨,H e D
+联,앰,H e E
+诉,앱,H e F
+憾,앳,H e G
+付,앴,H e S
+桃,앵,H e H
+栖,야,H V
+副,약,H V A
+总,얀,H V B
+颜,얄,H V D
+艳,얇,H V DF
+丑,얌,H V E
+河,얍,H V F
+义,얏,H V G
+胆,양,H V H
+魄,얕,H V M
+燃,얗,H V O
+伟,얘,H f
+欲,얜,H f B
+篮,얠,H f D
+杨,얩,H f F
+疲,어,H W
+劳,억,H W A
+诗,언,H W B
+振,얹,H W BJ
+奋,얻,H W C
+吵,얼,H W D
+剔,얽,H W DA
+议,얾,H W DE
+敢,엄,H W E
+啼,업,H W F
+建,없,H W FG
+组,엇,H W G
+织,었,H W S
+宣,엉,H W H
+坂,엊,H W J
+扩,엌,H W L
+赶,에,H g
+务,엑,H g A
+渐,엔,H g B
+烦,엘,H g D
+仅,엠,H g E
+谈,엡,H g F
+际,엣,H g G
+旺,엥,H g H
+盛,여,H X
+扮,역,H X A
+漂,엮,H X P
+聊,연,H X B
+举,열,H X D
+占,엶,H X DE
+亏,엷,H X DF
+修,염,H X E
+米,엽,H X F
+柱,엾,H X FG
+雕,엿,H X G
+塌,였,H X S
+雅,옅,H X M
+施,옆,H X N
+材,옇,H X O
+约,예,H h
+严,옌,H h B
+哼,옐,H h D
+毕,옘,H h E
+竟,옙,H h F
+毫,옛,H h G
+检,옜,H h S
+牵,오,H Y
+绊,옥,H Y A
+哉,온,H Y B
+须,올,H Y D
+愿,옭,H Y DA
+诸,옮,H Y DE
+赖,옰,H Y DG
+熟,옳,H Y DO
+碍,옴,H Y E
+废,옵,H Y F
+惨,옷,H Y G
+魂,옹,H Y H
+悟,옻,H Y K
+炽,와,H i
+热,왁,H i A
+温,완,H i B
+敏,왈,H i D
+捷,왐,H i E
+刻,왑,H i F
+糟,왓,H i G
+糕,왔,H i S
+惯,왕,H i H
+呜,왜,H j
+坪,왝,H j A
+例,왠,H j B
+赢,왬,H j E
+永,왯,H j G
+疼,왱,H j H
+盯,외,H k
+妨,왹,H k A
+彰,왼,H k B
+宏,욀,H k D
+谓,욈,H k E
+贞,욉,H k F
+夫,욋,H k G
+嘘,욍,H k H
+闲,요,H Z
+智,욕,H Z A
+兑,욘,H Z B
+核,욜,H Z D
+允,욤,H Z E
+答,욥,H Z F
+插,욧,H Z G
+料,용,H Z H
+档,우,H a
+希,욱,H a A
+她,운,H a B
+划,울,H a D
+业,욹,H a DA
+室,욺,H a DE
+噗,움,H a E
+禁,웁,H a F
+迫,웃,H a G
+党,웅,H a H
+陪,워,H m
+闷,웍,H m A
+谅,원,H m B
+一,월,H m D
+愉,웜,H m E
+救,웝,H m F
+站,웠,H m S
+扣,웡,H m H
+突,웨,H n
+陌,웩,H n A
+摸,웬,H n B
+嗷,웰,H n D
+堡,웸,H n E
+垒,웹,H n F
+句,웽,H n H
+忠,위,H r
+及,윅,H r A
+撼,윈,H r B
+演,윌,H r D
+假,윔,H r E
+货,윕,H r F
+仓,윗,H r G
+库,윙,H r H
+欣,유,H b
+赏,육,H b A
+昔,윤,H b B
+荣,율,H b D
+拯,윰,H b E
+曾,윱,H b F
+跟,윳,H b G
+板,융,H b H
+绘,윷,H b K
+睛,으,H c
+静,윽,H c A
+筑,은,H c B
+陵,을,H c D
+首,읊,H c DN
+测,음,H c E
+骗,읍,H c F
+肚,읏,H c G
+饿,응,H c H
+默,읒,H c J
+辞,읓,H c K
+喊,읔,H c L
+腰,읕,H c M
+割,읖,H c N
+饶,읗,H c O
+爸,의,H t
+悠,읜,H t B
+至,읠,H t D
+纪,읨,H t E
+逛,읫,H t G
+既,이,H d
+锻,익,H d A
+炼,인,H d B
+日,일,H d D
+祷,읽,H d DA
+睐,읾,H d DE
+绝,잃,H d DO
+佳,임,H d E
+洋,입,H d F
+岸,잇,H d G
+梯,있,H d S
+嘿,잉,H d H
+渡,잊,H d J
+侵,잎,H d N
+监,자,J U
+控,작,J U A
+碰,잔,J U B
+埋,잖,J U BO
+阱,잗,J U C
+轰,잘,J U D
+旁,잚,J U DE
+兵,잠,J U E
+汹,잡,J U F
+涌,잣,J U G
+执,잤,J U S
+凶,장,J U H
+坦,잦,J U J
+篷,재,J e
+披,잭,J e A
+言,잰,J e B
+论,잴,J e D
+哀,잼,J e E
+叹,잽,J e F
+岁,잿,J e G
+磨,쟀,J e S
+傅,쟁,J e H
+阴,쟈,J V
+篇,쟉,J V A
+枝,쟌,J V B
+繁,쟎,J V BO
+祠,쟐,J V D
+供,쟘,J V E
+弊,쟝,J V H
+骚,쟤,J f
+勤,쟨,J f B
+兄,쟬,J f D
+帅,저,J W
+历,적,J W A
+史,전,J W B
+铺,절,J W D
+区,젊,J W DE
+域,점,J W E
+烂,접,J W F
+捡,젓,J W G
+酷,정,J W H
+厚,젖,J W J
+搬,제,J g
+哟,젝,J g A
+蒙,젠,J g B
+操,젤,J g D
+甘,젬,J g E
+椿,젭,J g F
+盟,젯,J g G
+朝,젱,J g H
+朵,져,J X
+捍,젼,J X B
+卫,졀,J X D
+荡,졈,J X E
+危,졉,J X F
+莫,졌,J X S
+挡,졍,J X H
+匠,졔,J h
+谐,조,J Y
+欠,족,J Y A
+旱,존,J Y B
+灾,졸,J Y D
+丈,졺,J Y DE
+叔,좀,J Y E
+批,좁,J Y F
+卜,좃,J Y G
+瞎,종,J Y H
+茜,좆,J Y J
+灿,좇,J Y K
+致,좋,J Y O
+笨,좌,J i
+汪,좍,J i A
+遥,좔,J i D
+港,좝,J i F
+蹈,좟,J i G
+客,좡,J i H
+毁,좨,J j
+勿,좼,J j S
+尝,좽,J j H
+拾,죄,J k
+乡,죈,J k B
+柳,죌,J k D
+傲,죕,J k F
+琪,죗,J k G
+初,죙,J k H
+端,죠,J Z
+径,죡,J Z A
+凡,죤,J Z B
+坐,죵,J Z H
+宁,주,J a
+携,죽,J a A
+躲,준,J a B
+怡,줄,J a D
+妹,줅,J a DA
+漫,줆,J a DE
+却,줌,J a E
+汇,줍,J a F
+抖,줏,J a G
+躁,중,J a H
+沾,줘,J m
+排,줬,J m S
+嗡,줴,J n
+握,쥐,J r
+巡,쥑,J r A
+疑,쥘,J r D
+措,쥠,J r E
+仇,쥡,J r F
+滩,쥣,J r G
+彻,쥬,J b
+烫,쥰,J b B
+鼻,쥴,J b D
+踪,쥼,J b E
+猜,즈,J c
+七,즉,J c A
+茉,즌,J c B
+奈,즐,J c D
+惧,즘,J c E
+悲,즙,J c F
+顾,즛,J c G
+窍,증,J c H
+呗,지,J d
+牧,직,J d A
+哐,진,J d B
+炫,짇,J d C
+潜,질,J d D
+晕,짊,J d DE
+浮,짐,J d E
+暖,집,J d F
+累,짓,J d G
+肤,징,J d H
+晒,짖,J d J
+霜,짙,J d M
+脏,짚,J d N
+涂,짜,T U
+诡,짝,T U A
+胸,짠,T U B
+宽,짢,T U BO
+阔,짤,T U D
+渺,짧,T U DF
+捣,짬,T U E
+荐,짭,T U F
+赔,짯,T U G
+貌,짰,T U S
+患,짱,T U H
+悦,째,T e
+眉,짹,T e A
+愧,짼,T e B
+偏,쨀,T e D
+质,쨈,T e E
+免,쨉,T e F
+归,쨋,T e G
+介,쨌,T e S
+绍,쨍,T e H
+惩,쨔,T V
+罚,쨘,T V B
+诞,쨩,T V H
+茫,쩌,T W
+蔬,쩍,T W A
+挤,쩐,T W B
+李,쩔,T W D
+笑,쩜,T W E
+冬,쩝,T W F
+春,쩟,T W G
+溜,쩠,T W S
+诀,쩡,T W H
+肉,쩨,T g
+衣,쩽,T g H
+宫,쪄,T X
+胶,쪘,T X S
+囊,쪼,T Y
+抬,쪽,T Y A
+奴,쫀,T Y B
+奏,쫄,T Y D
+简,쫌,T Y E
+饱,쫍,T Y F
+遵,쫏,T Y G
+矩,쫑,T Y H
+季,쫓,T Y K
+辅,쫘,T i
+魅,쫙,T i A
+羡,쫠,T i D
+慕,쫬,T i S
+夏,쫴,T j
+秋,쬈,T j S
+暑,쬐,T k
+懂,쬔,T k B
+疾,쬘,T k D
+嗨,쬠,T k E
+驱,쬡,T k F
+兆,쭁,T Z H
+贸,쭈,T a
+佩,쭉,T a A
+况,쭌,T a B
+吊,쭐,T a D
+贩,쭘,T a E
+孤,쭙,T a F
+昆,쭝,T a H
+奥,쭤,T m
+莓,쭸,T m S
+创,쭹,T m H
+邪,쮜,T r
+聪,쮸,T b
+瞌,쯔,T c
+扭,쯤,T c E
+限,쯧,T c G
+赛,쯩,T c H
+仪,찌,T d
+哭,찍,T d A
+辆,찐,T d B
+仗,찔,T d D
+社,찜,T d E
+策,찝,T d F
+略,찡,T d H
+饮,찢,T d J
+缓,찧,T d O
+积,차,K U
+虎,착,K U A
+款,찬,K U B
+判,찮,K U BO
+钩,찰,K U D
+狠,참,K U E
+纽,찹,K U F
+汉,찻,K U G
+惑,찼,K U S
+屿,창,K U H
+程,찾,K U J
+赠,채,K e
+扔,책,K e A
+询,챈,K e B
+户,챌,K e D
+邻,챔,K e E
+槽,챕,K e F
+映,챗,K e G
+坑,챘,K e S
+耗,챙,K e H
+妇,챠,K V
+负,챤,K V B
+责,챦,K V BO
+缺,챨,K V D
+乏,챰,K V E
+迈,챵,K V H
+鸣,처,K W
+哨,척,K W A
+澡,천,K W B
+獏,철,K W D
+赤,첨,K W E
+陆,첩,K W F
+素,첫,K W G
+斑,첬,K W S
+江,청,K W H
+泊,체,K g
+汗,첵,K g A
+杏,첸,K g B
+垃,첼,K g D
+圾,쳄,K g E
+嘲,쳅,K g F
+坡,쳇,K g G
+池,쳉,K g H
+厦,쳐,K X
+胃,쳔,K X B
+销,쳤,K X S
+莉,쳬,K h
+民,쳰,K h B
+践,촁,K h H
+课,초,K Y
+衡,촉,K Y A
+啪,촌,K Y B
+嗒,촐,K Y D
+跪,촘,K Y E
+嘻,촙,K Y F
+栅,촛,K Y G
+栏,총,K Y H
+寂,촤,K i
+桥,촨,K i B
+悔,촬,K i D
+扫,촹,K i H
+墓,최,K k
+唤,쵠,K k B
+尤,쵤,K k D
+征,쵬,K k E
+橙,쵭,K k F
+尴,쵯,K k G
+尬,쵱,K k H
+夸,쵸,K Z
+羞,춈,K Z E
+淑,추,K a
+沿,축,K a A
+霞,춘,K a B
+俏,출,K a D
+盗,춤,K a E
+窃,춥,K a F
+词,춧,K a G
+忽,충,K a H
+括,춰,K m
+云,췄,K m S
+旦,췌,K n
+盘,췐,K n B
+撕,취,K r
+构,췬,K r B
+职,췰,K r D
+冥,췸,K r E
+闯,췹,K r F
+犯,췻,K r G
+孙,췽,K r H
+诚,츄,K b
+聆,츈,K b B
+茶,츌,K b D
+梳,츔,K b E
+苟,츙,K b H
+延,츠,K c
+残,측,K c A
+喘,츤,K c B
+梨,츨,K c D
+恼,츰,K c E
+采,츱,K c F
+毅,츳,K c G
+掩,치,K d
+泣,칙,K d A
+恋,친,K d B
+旷,칟,K d C
+伪,칠,K d D
+抛,칡,K d DA
+律,침,K d E
+抽,칩,K d F
+填,칫,K d G
+拖,칭,K d H
+斜,카,L U
+呃,칵,L U A
+碗,칸,L U B
+忧,칼,L U D
+景,캄,L U E
+痕,캅,L U F
+竞,캇,L U G
+蜥,캉,L U H
+蜴,캐,L e
+蝴,캑,L e A
+狐,캘,L e D
+狸,캠,L e E
+蝙,캡,L e F
+鼹,캣,L e G
+暹,캤,L e S
+蝇,캥,L e H
+憨,캬,L V
+锹,캭,L V A
+拟,컁,L V H
+芳,커,L W
+颚,컥,L W A
+躯,컨,L W B
+琵,컫,L W C
+琶,컬,L W D
+绵,컴,L W E
+兔,컵,L W F
+颈,컷,L W G
+蓑,컸,L W S
+酵,컹,L W H
+筝,케,L g
+铠,켁,L g A
+沐,켄,L g B
+浴,켈,L g D
+苞,켐,L g E
+惹,켑,L g F
+寿,켓,L g G
+苔,켕,L g H
+藓,켜,L X
+释,켠,L X B
+脆,켤,L X D
+妄,켬,L X E
+巢,켭,L X F
+肌,켯,L X G
+搧,켰,L X S
+殖,켱,L X H
+啃,켸,L h
+筋,코,L Y
+促,콕,L Y A
+咧,콘,L Y B
+慧,콜,L Y D
+储,콤,L Y E
+著,콥,L Y F
+奔,콧,L Y G
+扬,콩,L Y H
+犄,콰,L i
+崽,콱,L i A
+嚼,콴,L i B
+遭,콸,L i D
+竖,쾀,L i E
+硕,쾅,L i H
+辨,쾌,L j
+贮,쾡,L j H
+胀,쾨,L k
+依,쾰,L k D
+偎,쿄,L Z
+稠,쿠,L a
+湿,쿡,L a A
+煽,쿤,L a B
+掘,쿨,L a D
+溢,쿰,L a E
+蕴,쿱,L a F
+歪,쿳,L a G
+脖,쿵,L a H
+蹼,쿼,L m
+肢,퀀,L m B
+糊,퀄,L m D
+鬃,퀑,L m H
+凛,퀘,L n
+横,퀭,L n H
+苗,퀴,L r
+屈,퀵,L r A
+臂,퀸,L r B
+歇,퀼,L r D
+瘦,큄,L r E
+泌,큅,L r F
+浓,큇,L r G
+退,큉,L r H
+争,큐,L b
+茎,큔,L b B
+凉,큘,L b D
+呈,큠,L b E
+堆,크,L c
+悄,큭,L c A
+逼,큰,L c B
+裹,클,L c D
+凹,큼,L c E
+凸,큽,L c F
+漏,킁,L c H
+架,키,L d
+寞,킥,L d A
+络,킨,L d B
+卓,킬,L d D
+甚,킴,L d E
+泪,킵,L d F
+咳,킷,L d G
+嗽,킹,L d H
+涕,타,M U
+膨,탁,M U A
+浆,탄,M U B
+迟,탈,M U D
+钝,탉,M U DA
+鳍,탐,M U E
+卵,탑,M U F
+染,탓,M U G
+央,탔,M U S
+哑,탕,M U H
+娴,태,M e
+绪,택,M e A
+尺,탠,M e B
+骤,탤,M e D
+颤,탬,M e E
+蜕,탭,M e F
+溺,탯,M e G
+浩,탰,M e S
+瀚,탱,M e H
+淡,탸,M V
+抚,턍,M V H
+怯,터,M W
+懦,턱,M W A
+颗,턴,M W B
+戒,털,M W D
+烁,턺,M W DE
+翩,텀,M W E
+臀,텁,M W F
+凭,텃,M W G
+蓄,텄,M W S
+讶,텅,M W H
+廓,테,M g
+丰,텍,M g A
+脂,텐,M g B
+川,텔,M g D
+倾,템,M g E
+湍,텝,M g F
+拂,텟,M g G
+纵,텡,M g H
+悬,텨,M X
+支,텬,M X B
+撑,텼,M X S
+伫,톄,M h
+觅,톈,M h B
+六,토,M Y
+孔,톡,M Y A
+忌,톤,M Y B
+讳,톨,M Y D
+慌,톰,M Y E
+唬,톱,M Y F
+良,톳,M Y G
+粘,통,M Y H
+乳,톺,M Y N
+渗,톼,M i
+擦,퇀,M i B
+泉,퇘,M j
+畅,퇴,M k
+觊,퇸,M k B
+觎,툇,M k G
+渣,툉,M k H
+翱,툐,M Z
+沛,투,M a
+陶,툭,M a A
+醉,툰,M a B
+抡,툴,M a D
+抑,툼,M a E
+涨,툽,M a F
+茂,툿,M a G
+蕾,퉁,M a H
+宛,퉈,M m
+贯,퉜,M m S
+巩,퉤,M n
+磷,튀,M r
+洒,튁,M r A
+砾,튄,M r B
+碌,튈,M r D
+颊,튐,M r E
+燥,튑,M r F
+勒,튕,M r H
+脊,튜,M b
+椎,튠,M b B
+庞,튤,M b D
+嗙,튬,M b E
+壤,튱,M b H
+耕,트,M c
+田,특,M c A
+吠,튼,M c B
+摁,튿,M c C
+剥,틀,M c D
+蜇,틂,M c DE
+峻,틈,M c E
+踹,틉,M c F
+蔽,틋,M c G
+蒸,틔,M t
+厘,틘,M t B
+纠,틜,M t D
+纷,틤,M t E
+菌,틥,M t F
+卧,티,M d
+攒,틱,M d A
+粒,틴,M d B
+坟,틸,M d D
+唾,팀,M d E
+痒,팁,M d F
+澈,팃,M d G
+蓬,팅,M d H
+吮,파,N U
+亢,팍,N U A
+袤,팎,N U P
+晶,판,N U B
+焕,팔,N U D
+萎,팖,N U DE
+苏,팜,N U E
+匍,팝,N U F
+匐,팟,N U G
+屁,팠,N U S
+唯,팥,N U M
+眩,패,N e
+橡,팩,N e A
+稳,팬,N e B
+恫,팰,N e D
+扯,팸,N e E
+峭,팹,N e F
+扇,팻,N e G
+循,팼,N e S
+嗅,팽,N e H
+礁,퍄,N V
+雏,퍅,N V A
+涛,퍼,N W
+巅,퍽,N W A
+荆,펀,N W B
+棘,펄,N W D
+哺,펌,N W E
+弘,펍,N W F
+樱,펏,N W G
+兼,펐,N W S
+晋,펑,N W H
+昊,페,N g
+鸿,펜,N g B
+德,펠,N g D
+倢,펨,N g E
+祺,펩,N g F
+逸,펫,N g G
+淳,펭,N g H
+彦,펴,N X
+宪,편,N X B
+宇,펼,N X D
+旻,폄,N X E
+咏,폅,N X F
+馨,폈,N X S
+妍,평,N X H
+芷,폐,N h
+玥,폘,N h D
+蕙,폡,N h F
+贤,폣,N h G
+拓,포,N Y
+绯,폭,N Y A
+惠,폰,N Y B
+菫,폴,N Y D
+俊,폼,N Y E
+嗣,폽,N Y F
+臣,폿,N Y G
+乔,퐁,N Y H
+琴,퐈,N i
+卿,퐝,N i H
+武,푀,N k
+仁,푄,N k B
+哲,표,N Z
+漳,푠,N Z B
+庄,푤,N Z D
+轩,푭,N Z F
+沧,푯,N Z G
+泓,푸,N a
+洪,푹,N a A
+钧,푼,N a B
+润,푿,N a C
+宗,풀,N a D
+灏,풂,N a DE
+渊,품,N a E
+庆,풉,N a F
+晓,풋,N a G
+渚,풍,N a H
+帆,풔,N m
+湄,풩,N m H
+郁,퓌,N r
+汐,퓐,N r B
+雁,퓔,N r D
+政,퓜,N r E
+滋,퓟,N r G
+恒,퓨,N b
+骏,퓬,N b B
+吾,퓰,N b D
+铅,퓸,N b E
+昭,퓻,N b G
+峥,퓽,N b H
+崇,프,N c
+嵘,픈,N c B
+犹,플,N c D
+蔵,픔,N c E
+昌,픕,N c F
+勋,픗,N c G
+炘,피,N d
+裕,픽,N d A
+肇,핀,N d B
+舜,필,N d D
+蕊,핌,N d E
+蓁,핍,N d F
+铭,핏,N d G
+嫣,핑,N d H
+霓,하,O U
+裳,학,O U A
+典,한,O U B
+晖,할,O U D
+梅,핥,O U DM
+痊,함,O U E
+矢,합,O U F
+八,핫,O U G
+匕,항,O U H
+哆,해,O e
+佐,핵,O e A
+寸,핸,O e B
+巾,핼,O e D
+乞,햄,O e E
+亿,햅,O e F
+夕,햇,O e G
+勺,했,O e S
+丸,행,O e H
+咩,햐,O V
+污,향,O V H
+期,허,O W
+场,헉,O W A
+且,헌,O W B
+拜,헐,O W D
+伯,헒,O W DE
+岭,험,O W E
+股,헙,O W F
+戈,헛,O W G
+曰,헝,O W H
+冈,헤,O g
+壬,헥,O g A
+夭,헨,O g B
+仆,헬,O g D
+斤,헴,O g E
+虫,헵,O g F
+妖,헷,O g G
+菇,헹,O g H
+园,혀,O X
+享,혁,O X A
+午,현,O X B
+飘,혈,O X D
+逻,혐,O X E
+锥,협,O X F
+昶,혓,O X G
+刊,혔,O X S
+扒,형,O X H
+艾,혜,O h
+丙,혠,O h B
+夯,혤,O h D
+戊,혭,O h F
+轧,호,O Y
+卢,혹,O Y A
+申,혼,O Y B
+叽,홀,O Y D
+叼,홅,O Y DM
+叩,홈,O Y E
+叨,홉,O Y F
+冉,홋,O Y G
+皿,홍,O Y H
+囚,홑,O Y M
+二,화,O i
+乍,확,O i A
+禾,환,O i B
+仙,활,O i D
+斥,홧,O i G
+瓜,황,O i H
+匆,홰,O j
+册,홱,O j A
+卯,홴,O j B
+饥,횃,O j G
+冯,횅,O j H
+玄,회,O k
+讯,획,O k A
+弗,횐,O k B
+辽,횔,O k D
+召,횝,O k F
+孕,횟,O k G
+矛,횡,O k H
+邦,효,O Z
+迂,횬,O Z B
+刑,횰,O Z D
+戎,횹,O Z F
+扛,횻,O Z G
+寺,후,O a
+芋,훅,O a A
+芝,훈,O a B
+朽,훌,O a D
+朴,훑,O a DM
+权,훔,O a E
+吏,훗,O a G
+戌,훙,O a H
+夷,훠,O m
+轨,훤,O m B
+尧,훨,O m D
+劣,훰,O m E
+吁,훵,O m H
+吕,훼,O n
+吆,훽,O n A
+屹,휀,O n B
+岂,휄,O n D
+廷,휑,O n H
+竹,휘,O r
+迄,휙,O r A
+乒,휜,O r B
+乓,휠,O r D
+伍,휨,O r E
+臼,휩,O r F
+伐,휫,O r G
+仲,휭,O r H
+伦,휴,O b
+仰,휵,O b A
+瑕,휸,O b B
+绚,휼,O b D
+栋,흄,O b E
+枚,흇,O b G
+煌,흉,O b H
+署,흐,O c
+旨,흑,O c A
+肥,흔,O c B
+玲,흖,O c BO
+圭,흗,O c C
+麦,흘,O c D
+瑞,흙,O c DA
+阶,흠,O c E
+闸,흡,O c F
+漾,흣,O c G
+肆,흥,O c H
+虐,흩,O c M
+阵,희,O t
+缚,흰,O t B
+均,흴,O t D
+彼,흼,O t E
+套,흽,O t F
+财,힁,O t H
+罢,히,O d
+匹,힉,O d A
+铜,힌,O d B
+柜,힐,O d D
+磐,힘,O d E
+亘,힙,O d F
+翠,힛,O d G
+                </textarea>
+            </div>
+        </div>
+    </body>
+</html>

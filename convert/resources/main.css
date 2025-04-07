@@ -1,0 +1,54 @@
+body {
+    padding: 1rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* color:aqua; */
+}
+
+@media (max-width: 1024px) {
+    div.div-main {
+        display: flex; 
+        flex-direction: column;
+    }
+    div.div-buttons {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center;
+        margin: 0 1rem;
+    }
+    div.div-io textarea {
+        width: 100%;
+        height: 10rem;
+    }
+    div.div-buttons button{
+        margin: 1rem 1rem;
+    }
+    
+    /* div.div-table textarea {
+        width: 100%;
+    } */
+}
+
+@media (min-width: 1024px){
+    div.div-main {
+        display: flex; 
+        flex-direction: row;
+    }
+    div.div-buttons {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        margin: 0 1rem;
+    }
+    div.div-buttons button{
+        margin: 1rem 0rem;
+    }    
+}
+
+
+div.div-table {
+    margin: 1rem 0;
+}
